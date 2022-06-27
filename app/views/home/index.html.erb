@@ -1,8 +1,6 @@
-<%= link_to "Sign Up", new_user_registration_path %>
-<%= link_to "Sign In", new_user_session_path %>
 <div class= "container">
   <% if user_signed_in? %>
-    <h1>Wel-Come Dipak</h1>
+    <h1>Wel-Come <%= current_user.first_name %></h1>
   <% else %>
     <h1>Wel-Come Guest</h1>
   <% end %>
