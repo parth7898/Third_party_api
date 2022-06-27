@@ -1,2 +1,7 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class= "container">
+  <% if user_signed_in? %>
+    <h1>Wel-Come Dipak</h1>
+  <% else %>
+    <h1>Wel-Come Guest</h1>
+  <% end %>
+</div>
