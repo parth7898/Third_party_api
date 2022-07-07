@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
+  get 'coin-data', to: "home#fetch_data", as: 'fetch_data'
 end

@@ -1,0 +1,26 @@
+ <% if user_signed_in? %>     
+  <div class="container">
+    <h1>Data of 14 days</h1>
+    <div class="card">
+      <table  class="table" >                         
+        <tr>                          
+          <th>Time</th>
+          <th>Price</th>
+        </tr>
+          <% if @result.present? %>
+            <% @result["prices"].reverse.each do |data| %>      
+              <tr> 
+                <td><%=DateTime.strptime(data[0].to_s,'%Q').to_date %></td>
+                <td><%= data[1]%></td>    
+              </tr>
+            <% end %>
+          <% else %>                      
+            <p> No Data present</p>
+          <% end %>
+      </table> 
+    </div>
+  </div>
+  <% else %>
+    <h1>Wel-Come Guest</h1>
+  <% end %>
+

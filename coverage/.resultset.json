@@ -1,0 +1,82 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/rails/TestTask/coin_gecko/app/models/coin.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/rails/TestTask/coin_gecko/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          2,
+          null,
+          2,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1673,
+          null,
+          null
+        ]
+      },
+      "/home/rails/TestTask/coin_gecko/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/rails/TestTask/coin_gecko/app/services/coins_api_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1656593149
+  }
+}

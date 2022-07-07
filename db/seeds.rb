@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts "Insert Data ...................."
+url = "https://api.coingecko.com/api/v3/coins/list"
+
+response = RestClient.get(url)
+result = JSON.parse(response)
+result.each do |data|
+    Coin.create(coin_id:data['id'],name:data['name'],symbool:data['symbol'])
+end
+puts "Data successfully insert"
